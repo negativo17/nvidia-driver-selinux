@@ -15,6 +15,9 @@ Source1:        LICENSE
 Requires:       selinux-policy-%{selinuxtype}
 Requires(post): selinux-policy-%{selinuxtype}
 
+# To get the actual selinux_requires macro
+BuildRequires:  selinux-policy
+
 %{?selinux_requires}
 
 %description
