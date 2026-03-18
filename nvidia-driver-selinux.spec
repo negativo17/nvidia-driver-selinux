@@ -33,8 +33,6 @@ bzip2 -9 %{modulename}.pp
 %install
 install -D -m 0644 %{modulename}.pp.bz2 %{buildroot}%{_datadir}/selinux/packages/%{selinuxtype}/%{modulename}.pp.bz2
 
-%check
-
 %pre
 %selinux_relabel_pre -s %{selinuxtype}
 
